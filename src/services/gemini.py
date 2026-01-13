@@ -5,7 +5,7 @@ from src.config import GEMINI_API_KEY
 class GeminiService:
     def __init__(self):
         genai.configure(api_key=GEMINI_API_KEY)
-        self.model = genai.GenerativeModel('gemini-1.5-flash')
+        self.model = genai.GenerativeModel('gemini-2.5-flash')
 
     def analisar_calorias(self, nome_comida: str):
         print(f"Service: Analisando '{nome_comida}'...")
